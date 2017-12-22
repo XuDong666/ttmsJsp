@@ -2,17 +2,160 @@
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 100%;
 }
 
 .head {
+    margin: 0px;
     background: #494949;
-    height: 40px;
+    height: 6%;
     border: 1px solid #000000;
     text-shadow: 0 1px 0 #000000;
     line-height: 40px;
     color: #AEAEAE;
 }
+a,a:hover,a:visited{
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+}
 
-.left,.right {
-    height: 100%
+.row{
+    width: 100%;
+}
+.button{
+    display: inline-block;
+    vertical-align: middle;
+}
+a.button{
+    border:1px solid #000000;
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    padding:5px 6px;
+    margin: auto 15px;
+}
+.buttom{
+    margin: 0;
+}
+.siderbar{
+    position: relative;
+    top: 0px;
+    left: -330px;
+    background: #494949;
+    float: left;
+    height: 94%;
+    padding: 0;
+}
+.siderbar ul{
+    padding-left: 0;
+}
+.siderbar ul>li a{
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+    padding-left: 35px;
+    border-radius: 5px;
+    list-style: none;
+    line-height: 40px;
+    text-decoration: none;
+    color: #AAAAAA!important;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-bottom: 1px solid #313131;
+    border-top: 1px solid #606060;
+}
+#studiomenu{
+    display: none;
+}
+#studiomenu a{
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 65px;
+    background: #696969;
+    font-size: 0.9em;
+}
+
+.userlist{
+    position: absolute;
+    top: -580px;
+    left: 450px;
+}
+.paginationE{
+    list-style: none;
+    position: absolute;
+    top:-250px;
+    left: 720px;
+    width: 300px;
+}
+.paginationE li{
+    display: inline-block;
+    /*padding: 3px;*/
+}
+.paginationE li a{
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#currentPage{
+    background: transparent;
+    color: #0f0f0f;
+}
+#searchForm{
+    width: 400px;
+    position: absolute;
+    top:-600px;
+    right: -460px;
+}
+
+#searchForm div input{
+    background: whitesmoke;
+}
+
+#addEmployee{
+    position: absolute;
+    top:-600px;
+    right:-370px;
+    display: none;
+}
+
+.ulist{
+    position: absolute;
+    top: -580px;
+    left: 450px;
+    width: 700px;
+}
+.ulist th,td{
+    width: 110px;
+}
+.paginationU{
+    list-style: none;
+    position: absolute;
+    top:-250px;
+    left: 650px;
+    width: 300px;
+}
+.paginationU li{
+    display: inline-block;
+    /*padding: 3px;*/
+}
+.paginationU li a{
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+}
+#addUser{
+    position: absolute;
+    top:-600px;
+    right:-370px;
+    display: none;
+}
+#searchFormU{
+    width: 400px;
+    position: absolute;
+    top:-600px;
+    right: -460px;
 }

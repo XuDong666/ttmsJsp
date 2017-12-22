@@ -18,6 +18,7 @@
     <link rel="stylesheet" type="text/css" href="css/login.css" media="all">
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
+    <script src="lib/jquery-3.2.1.min.js"></script>
     <style>
         body {
             background-image: url(images/4.jpg);
@@ -79,6 +80,30 @@
     }, false);
 
     showWarnMessage();
+
+</script>
+<script>
+    $("#username").blur(function () {
+        const username=$("#username").value;
+        const reg=/[a-zA-Z0-9]{4,8}/;
+        if(username==""){
+            alert("请输入账号")
+        }
+        if(!reg.test(username)){
+            alert("账号格式不符合规范");
+        }
+
+    });
+    $("#password").blur(function () {
+        const password=$("#password");
+        if(password==""){
+            alert("请输入密码");
+        }
+        const reg=/[a-zA-Z0-9]{4,8}/
+        if(!reg.test(password)){
+            alert("请输入正确的密码格式")
+        }
+    })
 </script>
 </body>
 </html>
